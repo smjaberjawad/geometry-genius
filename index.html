@@ -29,8 +29,8 @@
             <!-- Navigation Bar -->
             <nav class="flex justify-between items-center">
                 <div>
-                    <h1 class="font-bold	text-5xl	">Interactive </h1>
-                    <h2 class="font-medium	text-3xl	text-[#11111199]">Geometry Genius</h2>
+                    <h1 class="font-bold text-5xl">Interactive </h1>
+                    <h2 class="font-medium text-3xl text-[#11111199]">Geometry Genius</h2>
                 </div>
                 <div>
                     <button class="btn btn-info text-white px-10">Blog</button>
@@ -42,9 +42,67 @@
 
     <!-- Main Starts -->
     <main>
+        <div class="w-11/12 mx-auto">
+            <section class="grid grid-cols-[3fr_1fr]">
 
+                <!-- Shape Container -->
+                <div>
+
+                    <!-- First Row -->
+                    <div class="grid grid-cols-3">
+
+                        <!-- Triangle -->
+                        <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
+                            <img class="m-auto" src="images/triangle.png" alt="">
+                            <h3 class="text-center font-bold text-2xl mt-12">Triangle</h3>
+                            <p class="text-center">Area (A) = 0.5 x b x h</p>
+                            <div class="flex gap-x-2 justify-center items-center mt-5">
+                                <input id="triangle_base"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="base">
+                                <span>cm</span>
+                                <input id="triangle_height"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="height">
+                                <span>cm</span>
+                            </div>
+                            <button onclick="calculateTriangle()"
+                                class="btn btn-info text-white w-full mt-12">Calculate</button>
+                        </div>
+
+                        <!-- Rectangle -->
+                        <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
+                            <img class="m-auto" src="images/rectangle.png" alt="">
+                            <h3 class="text-center font-bold text-2xl mt-12">Rectangle</h3>
+                            <p class="text-center">Area (A) = w x l</p>
+                            <div class="flex gap-x-2 justify-center items-center mt-5">
+                                <input id="rectangle_width"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="width">
+                                <span>cm</span>
+                                <input id="rectangle_length"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="length">
+                                <span>cm</span>
+                            </div>
+                            <button onclick=""
+                                class="btn btn-info text-white w-full mt-12">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Calculation Result -->
+                <div id="area_section" class="border-2 border-[#1111111A] rounded-lg py-8 px-4">
+                    <h3 class="text-center underline font-bold text-xl">Area Calculation</h3>
+                </div>
+
+            </section>
+        </div>
     </main>
 
+    <script src="js/triangle.js"></script>
 </body>
 
 </html>
