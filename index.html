@@ -43,13 +43,13 @@
     <!-- Main Starts -->
     <main>
         <div class="w-11/12 mx-auto">
-            <section class="grid grid-cols-[3fr_1fr]">
+            <section class="grid grid-cols-[3fr_1fr] gap-6">
 
                 <!-- Shape Container -->
-                <div>
+                <div class="grid gap-6">
 
                     <!-- First Row -->
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3 gap-6">
 
                         <!-- Triangle -->
                         <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
@@ -89,6 +89,83 @@
                                 class="btn btn-info text-white w-full mt-12">Calculate</button>
                         </div>
 
+                        <!-- Parallelogram -->
+                        <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
+                            <img class="m-auto" src="images/parallelogram.png" alt="">
+                            <h3 class="text-center font-bold text-2xl mt-12">Parallelogram</h3>
+                            <p class="text-center">Area (A) = b x h</p>
+                            <div class="flex gap-x-2 justify-center items-center mt-5">
+                                <input id="parallelogram_base"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="base">
+                                <span>cm</span>
+                                <input id="parallelogram_height"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="height">
+                                <span>cm</span>
+                            </div>
+                            <button onclick="" class="btn btn-info text-white w-full mt-12">Calculate</button>
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="grid grid-cols-3 gap-6">
+
+                        <!-- Rhombus -->
+                        <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
+                            <img class="m-auto" src="images/rhombus.png" alt="">
+                            <h3 class="text-center font-bold text-2xl mt-12">Rhombus</h3>
+                            <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                            <div class="flex gap-x-2 justify-center items-center mt-5">
+                                <input id="rhombus_d1"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="diagonal 1">
+                                <span>cm</span>
+                                <input id="rhombus_d2"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="diagonal 2">
+                                <span>cm</span>
+                            </div>
+                            <button onclick="" class="btn btn-info text-white w-full mt-12">Calculate</button>
+                        </div>
+
+                        <!-- Pentagon -->
+                        <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
+                            <img class="m-auto" src="images/pentagon.png" alt="">
+                            <h3 class="text-center font-bold text-2xl mt-12">Pentagon</h3>
+                            <p class="text-center">Area (A) = 0.5 x p x b</p>
+                            <div class="flex gap-x-2 justify-center items-center mt-5">
+                                <input id="pentagon_p"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="p">
+                                <span>cm</span>
+                                <input id="pentagon_b"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="b">
+                                <span>cm</span>
+                            </div>
+                            <button onclick="" class="btn btn-info text-white w-full mt-12">Calculate</button>
+                        </div>
+
+                        <!-- Ellipse -->
+                        <div class="border-2 border-[#1111111A] rounded-lg px-11 py-12">
+                            <img class="m-auto" src="images/ellipse.png" alt="">
+                            <h3 class="text-center font-bold text-2xl mt-12">Ellipse</h3>
+                            <p class="text-center">Area (A) = 兀ab</p>
+                            <div class="flex gap-x-2 justify-center items-center mt-5">
+                                <input id="ellipse_a"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="a">
+                                <span>cm</span>
+                                <input id="ellipse_b"
+                                    class="w-full bg-gray-200 rounded px-3 py-2 placeholder:text-black placeholder:opacity-50"
+                                    type="text" placeholder="b">
+                                <span>cm</span>
+                            </div>
+                            <button onclick="" class="btn btn-info text-white w-full mt-12">Calculate</button>
+                        </div>
+
                     </div>
 
                 </div>
@@ -104,6 +181,7 @@
 
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
 </body>
 
 </html>
